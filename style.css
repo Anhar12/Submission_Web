@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    font-family: 'Alatsi', sans-serif;
+    padding: 0 40px 0 40px;
+    height: 65px;
+    border-bottom: 1px solid #749BC2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #2B2A4C;
+    color: #fff;
+}
+
+header h2 {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header ul li a .fa{  
+    display: none;
+}
+
+.other-page::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #EA906C;
+    display: flex;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.other-page:hover::after {
+    width: 100%;
+}
+
+#current-page a {
+    color: #B31312; 
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input{
+    height: 35px;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #2B2A4C;
+    border-right: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-bar button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #2B2A4C;
+    border-left: none;
+    outline: none;
+    cursor: pointer;
+    width: 45px;
+}
+
+.search-bar button:hover {
+    transition: 0.3s;
+    background-color: rgb(190, 190, 190);
+}
+
+.search-bar button i:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#search-bar-home {
+    width: 500px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Main Content */
+main {
+    font-family: 'Alatsi', sans-serif;
+    min-height: 400px;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background: #EEE2DE;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #2B2A4C;
+    border-bottom: 2px solid #B31312;
+    padding-bottom: 10px;
+}
+
+.main-content article {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+
+.main-content img {
+    width: 350px;
+    height: 230px;
+    border: 2px solid #2B2A4C;
+    border-radius: 5px;
+}
+
+.main-content aside {
+    padding: 10px 0 10px 0;
+}
+
+.main-content aside:hover {
+    transform: scale(1.025);
+    transition: 0.3s;
+}
+
+.slide-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 780px;
+    gap: 5px;
+}
+
+.slides {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 5px);
+    gap: 5px;
+    overflow: hidden;
+}
+
+.slide-btn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slide-btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card {
+    padding: 10px 10px 15px 10px;
+    background: rgba(234, 144, 108, 0.5);
+    list-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.card p{
+    font-size: 12px;
+}
+
+#img-slider img {
+    border: 2px solid #2B2A4C;
+    width: 200px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+#img-slider img:hover {
+    transform: scale(1.025);
+    transition: 0.3s;
+}
+
+#img-me {
+    width: 250px;
+    height: 300px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Footer */
+footer {
+    font-family: 'Oswald';
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    color: #fff;
+}
+
+.footer {
+    background: #212529;
+    color: #999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    min-height: 0px;
+    font-size: 12px;
+    padding: 20px 0 20px 0;
+    text-align: justify;
+}
+
+.footer-content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-content h2 {
+    font-family: 'Oswald';
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #B31312;
+    width: 100px;
+}
+
+.footer-content ul li{
+    list-style: none;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-account{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-account li {
+    padding: 5px 10px 5px 10px;
+    background: #222;
+    border-radius: 5px;
+}
+
+.footer-account li:hover {
+    background: #f00;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contact li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.copyright{
+    background: #111;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Media query / resnponsive */
+@media screen and (max-width: 956px){
+    main {
+        padding: 10px 30px 10px 30px;
+    }
+
+    header {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    
+    header ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 65px; 
+        left: 0;
+        background-color: #2B2A4C;
+        width: 350px; 
+        height: 100vh; 
+        border: 2px solid #222;
+        gap: 0;
+    }
+
+    header ul li {
+        padding: 15px 0 15px 0;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 2px solid #EEE2DE;
+    }
+    
+    .search-bar input {
+        width: 300px;
+        margin-left: 10px;
+    }
+    
+    .search-bar button {
+        width: 35px;
+        margin-right: 10px;
+    }
+
+    header ul li a i {
+        display: flex;
+    }
+
+    #btn-menu {
+        display: flex;
+        background: #2B2A4C;
+        color: #fff;
+        border: none;
+    }
+
+    .other-page::after {
+        display: none;
+    }
+
+    .main-content img {
+        width: 280px;
+        height: 180px;
+    }
+
+    .slide-menu {
+        max-width: 770px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .slide-menu {
+        max-width: 550px;
+    }
+
+    .slides {
+        grid-auto-columns: calc((100% / 2) - 5px);
+        gap: 5px;
+    }
+
+    #search-bar-home {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 285px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        width: auto;
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .slide-menu {
+        max-width: 500px;
+    }
+
+    #img-slider img {
+        width: 180px;
+    }
+
+    #card-slide {
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    header {
+        padding: 0 10px 0 10px;
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
+    
+    .slides {
+        grid-auto-columns: calc((100% / 1) - 5px);
+        gap: 5px;
+    }
+    
+    .slide-menu {
+        max-width: 300px;
+    }
+
+    #img-slider img {
+        width: 200px;
+        height: 130px;
+    }
+
+    #card-slide {
+        width: 200px;
+    }
+
+    #search-bar-home {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        padding: 0 5px 0 5px;
+    }
+    header h2 {
+        font-size: 26px;
+    }
+    main {
+        padding: 10px;
+    }
+    .main-content img {
+        width: 200px;
+        height: 150px;
+    }
+    .footer-content {
+        padding: 10px;
+    }
+    
+    .slide-menu {
+        max-width: 250px;
+    }
+
+    #img-slider img {
+        width: 160px;
+        height: 100px;
+    }
+
+    #card-slide {
+        width: 160px;
+    }
+
+    #search-bar-home {
+        width: 200px;
+    }
+}
